@@ -19,12 +19,16 @@ public class MainStringHW5 {
         boolean rs = isPalindrome("Level");
         System.out.println(rs);
 
+        String sz = "absdefgh";
+        String sub = "def";
+        int result = substringIndex(sz, sub);
+        System.out.println(result);
+
+
 
     }
 
     public static boolean isPalindrome(String str) {
-        str = str.replace(" ", "");
-//
         str = str.replace(" ", "");
         StringBuilder sb = new StringBuilder(str);
         sb.reverse();
@@ -54,9 +58,26 @@ public class MainStringHW5 {
             }
             System.out.println(reversed);
         }
+
     }
+    public static int substringIndex(String sz, String sub) {
+        if (sub.length() > sz.length()) {
+            return -1;
+        }
+        for (int i = 0; i <= sz.length() - sub.length(); i++) {
+            int j;
+            for (j = 0; j < sub.length(); j++) {
+                if (sz.charAt(i + j) != sub.charAt(j)) {
+                    break;
+                }
+            }
+            if (j == sub.length()) {
+                return i;
+            }
+        }
+        return -1;
 
-
+    }
 
 }
 
@@ -69,7 +90,7 @@ public static void main(String[] args){
     boolean res = isPalindrome("a roza upala na lapu azora");
 
 
-   //  1#  public static void printCharIndex(String str, char sym)
+   1.  public static void printCharIndex(String str, char sym)
         012345678910
 str  = "hello world" sum = 'l'
 output:
