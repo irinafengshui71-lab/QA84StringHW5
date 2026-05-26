@@ -41,4 +41,51 @@ str -> "Level"
 public static boolean isPalindrom(String str)
 str -> "Name now one man";
 
+// HW6
+
+public static boolean isPalindrom(String str){
+    if (str == null)
+        return false;
+    str = str.trim();
+    str = str.toLowerCase();
+
+    for (int i = 0,j = str.length()-1;i < j;i++,j--){
+        char ci = str.charAt(i);
+        char cj = str.charAt(j);
+        if (ci != cj)
+            return false;
+    }
+    return true;
+}
+HW/7
+
+HW -> ADVANCED N1
+
+        0123456789
+    s->"ccbbbdddda"
+    return 5
+
+    2. public static void printCapitals(String s)//raspe4atatj perwujü bukwu
+    s-> " Hello course QA 84"
+    output:
+    "HCQA"
+    3.
+    public static void printLastReverse(String s)
+    s-> " Hello course QA 84"
+    output:
+    "4Aeo"
+
+    4.
+    .  ADVANCED *****
+public static String insertFrom(String s, int index, String ins)
+     012345678910
+s-> "Hello world"
+ins- > "my "
+index -> 6
+
+result str -> "Hello my world" to return
+
+
+
+
  */

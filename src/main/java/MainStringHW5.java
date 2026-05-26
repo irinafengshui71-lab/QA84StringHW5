@@ -12,11 +12,12 @@ public class MainStringHW5 {
         printCharIndex(str, sym);
 
         String sentence = "Hello course QA84";
-        System.out.println("  # 1: ");
+        System.out.println("# 1: ");
         printSentenceReverse1(sentence);
         System.out.println("# 2: ");
         printSentenceReverse2(sentence);
-        boolean rs = isPalindrome("Level");
+
+        boolean rs = isPalindrome("Name nov one man");
         System.out.println(rs);
 
         String sz = "absdefgh";
@@ -38,9 +39,10 @@ public class MainStringHW5 {
     public static void printCharIndex(String str, char sym){
         for (int i = 0; i< str.length(); i ++){
             if(str.charAt(i) == sym){
-                System.out.print(i + "");
+                System.out.print(i + " ");
             }
         }
+        System.out.println();
     }
     public static void printSentenceReverse1(String sentence){
         String[]words = sentence.split(" ");
@@ -121,6 +123,11 @@ str -> "Level"
 #4advanced ***
 public static boolean isPalindrom(String str)
 str -> "Name now one man";
+
+public static int substringIndex(String s, String sub)
+public static int substringIndex(String s, String sub){
+    return s.indexOf(sub);
+}
 
  */
 
